@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/07bc7c9ffb.js" crossorigin="anonymous"></script></head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+            <h1 id="logo"><span style="color: #00d7ff;">E</span>unice.</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact me</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p style="color: #00d7ff;">Frontend Developer</p>
+            <h1>Hi, I'm <span>Eunice</span> Devesse <br>get to know me</h1>
+        </div>
+        </div>
+    </div>
+    
+<div id="about">
+    <div class="container">
+        <div id = "arco">
+            <svg id="ellaCurve">
+                <defs>
+                    <clipPath>
+                        <path d="M 0, 1 L 0, 0 L 1, 0 L 1, 1 C .65 .8, .35 .8, 0 1 Z""></path>
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+        <div class="row">
+            <div class="about-col-1">
+                <img src = "images/aboutme.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p style="font-size: 18px; text-align: justify;">I'm a spirited young woman who finds her joy in the enchanting world of web creation. 
+                    I'm not just a developer; I'm a digital dreamweaver, bringing ideas to life through lines of code and a touch of magic. 
+                    The keyboard is my canvas, and with every stroke, I paint the picture of immersive online experiences.
+
+                    Driven by curiosity and fueled by creativity, I see web development as more than just a skill; it's a passion. Each project is a chance to craft a unique story, connecting people and ideas in the vast digital landscape.
+                    I believe in the transformative power of a well-designed website, where pixels and purpose converge to leave a lasting impression.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                
+                <div class="tab-contents active-tab" id = "skills">
+                    <ul>
+                        <li><span>Web Developement</span><br>Web App Developement</li>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>App Developement</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Web Development</li>
+                        <li><span>2020-2021</span><br>Designing Web Interfaces</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Computer Science Degree from Universidade De Évora</li>
+                        <li><span>2023</span><br>Web Development Course by UDEMY</li>
+                        <li><span>2019</span><br>UI/UX from Coursera</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Dive into my collection of websites, where I've poured my heart and skills into crafting visually appealing and user-friendly online spaces. From sleek designs to seamless navigation, each project in my portfolio is a testament to my commitment to delivering top-notch web development.
+                    As a solo practitioner, I take pride in my versatility. Whether you're a creative individual, a small business, or someone with a unique vision, I specialize in tailoring websites to suit your specific needs.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Let the designs speak for themselves. Whether you're looking for a sleek website, a user-friendly app, or a reimagining of your brand's visual identity, I'm here to transform your ideas into visually compelling and user-centric experiences. 
+                    Your journey to an exceptional UI/UX design starts with a browse through my portfolio – let's create something extraordinary together!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>I'm a dynamic app designer on a mission to redefine the boundaries of creativity by infusing diversity into every pixel. You'll uncover a mosaic of app designs that transcend cultural expectations, celebrating the uniqueness of every user's journey.
+                    In my collection, each app design is a symphony of cultural richness and inclusive aesthetics. From intuitive interfaces that cater to diverse perspectives to visually striking elements that resonate universally, 
+                    I specialize in crafting designs that break free from conventional norms, creating experiences that feel personal and authentic.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--portfolio section-->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app that connects you the 
+                        talented people around the world. Download
+                        it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app that connects you the 
+                        talented people around the world. Download
+                        it from play store.
+                    </p>
+                    <a><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app that connects you the 
+                        talented people around the world. Download
+                        it from play store.
+                    </p>
+                    <a><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="contact-left">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>eunicedevesse24@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>930638306</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/euni "><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/euniceDevesse "><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/eunice_tiago/ "><i class="fa-brands fa-instagram"></i></a>
+                    <a href=" https://www.youtube.com/channel/UCKh_jIkNAUxlZfkGSZr2eng"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="cv.txt" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="database.php" method="post">
+                    <input type="text" name="Name" placeholder="Enter your Name" required>
+                    <input type="email" name="email" placeholder="Enter your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright Eunice. &copy; Made with Eunice Devesse</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";  
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";  
+    }
+
+</script>
+</body>
+</html>
